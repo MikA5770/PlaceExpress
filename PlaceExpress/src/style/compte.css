@@ -1,0 +1,181 @@
+
+.layer{
+  display: grid; 
+  grid-template-columns: repeat(12, minmax(0, 1fr)); 
+}
+
+.profil, .data, .password, .delete_acc{
+  font-size:1.5em;
+  font-weight: bold;
+  padding-left: 3%;
+
+}
+
+/*NAV PAGE*/
+
+.navpage{
+  padding-left: 0.5rem; 
+  grid-column: span 9 / span 9; 
+  height: 100vh; 
+  background-color: white; 
+
+}
+
+@media (min-width: 768px) {
+  .navpage {
+  grid-column: span 10 / span 10;} 
+ }
+
+
+ /*SIDEBAR*/
+
+.sidebar{
+  padding-left: 0.5rem; 
+  grid-column: span 3 / span 3; 
+  height: 100vh; 
+  background-color: beige; 
+
+}
+
+@media (min-width: 768px) { 
+  .sidebar { 
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-column: span 2 / span 2;
+    }
+
+ }
+
+ @media (max-width: 540px) { 
+  .sidebar-title {
+    display: none; /* Masquer les titres */
+  }
+
+ }
+
+
+ .sidebar-link {
+  text-decoration:none; 
+  margin-top: 7px;
+  padding-left: 5px;
+  padding-bottom: 7px;
+  width: 100%;
+  height: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  margin-right: 1px;
+  background-color: transparent;
+  transition: background-color 0.4s; /* Ajoutez une transition pour une animation fluide */
+
+}
+
+.sidebar-link:hover, .sidebar-link.active-link {
+  background-color: white;
+  padding-top: 6px;
+  height: 18px;
+  border-radius: 5%;
+  width: 95%;
+  text-decoration:none; 
+}
+
+.sidebar-icon {
+  font-size: 18px; /* Ajustez la taille des icônes au besoin */
+  margin-right: 16px; /* Espacement entre l'icône et le titre */
+}
+
+/*PROFIL*/
+
+
+@media (min-width: 540px) {
+
+  .section1 {
+    display: flex;
+  
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 5%;
+  }
+
+  .section2 {
+    padding-left: 5%;
+    max-width: 66%;
+  }
+  
+  .bouton1{
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  
+  .input-container{
+    padding-left: 5%;
+  } 
+  
+  .input1, .input2 {
+    padding-bottom: 5%;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 540px) {
+  .section1 {
+    display: block;
+    flex-direction :column;
+    align-items: center;
+    justify-content: center; /* Centre horizontalement */
+  }
+
+  .section1, .section2, .bouton1, .avatar{
+    padding-bottom: 5%;
+  
+  }
+
+  .input1, .input2 {
+    padding-bottom: 5%;
+  }
+
+  .avatar{
+    display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  }
+
+
+}
+
+
+
+/*DONNEES*/
+
+
+.data-input-container{
+  width:auto;
+}
+
+#data_input1, .data_input2, .data_input3, .civilité, .date-de-naissance, .coordonnées, .bouton2{
+  padding-top: 4vh;
+  max-width: 66%;
+  padding-left: 3%;
+
+}
+
+/*PASSWORD*/
+
+.ancienMDP, .nouveauMDP, .bouton3{
+  padding-top: 4vh;
+  max-width: 100%;
+  padding-left: 3%;
+}
+
+/*DELETE ACCOUNT*/
+
+.bouton4, .MDP{
+  padding-top: 4vh;
+  max-width: 100%;
+  padding-left: 3%;
+}

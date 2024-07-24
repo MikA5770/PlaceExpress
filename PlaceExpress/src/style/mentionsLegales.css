@@ -1,0 +1,28 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_mentionsLegales{
+    height: 70vh;
+    width: 50vw;
+    margin: 3vh 5vw;
+}
+
+.titre_mentionsLegales{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin: 0 0 3vh 0;
+}
+
+.titre_section{
+    font-size: 1.6rem;
+    margin: 3.5vh 0;
+}
+
+.txt_mentionsLegales{
+    margin-left: 2vw;
+}

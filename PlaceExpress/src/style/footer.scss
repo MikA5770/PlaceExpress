@@ -1,0 +1,168 @@
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorDore;
+    height: 14rem;
+    width: 100%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    & a{
+        color:white;
+        text-decoration: none;
+    }
+    &_gauche{
+        width: 30%;
+        height: 75%;
+        display: flex;
+        justify-content: space-between;
+    }&_centre{
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        height: 30%;
+        &_logo{
+            width: 30%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }&_univ{
+            background-image: url("image/logo/univBlanc.png");
+        }&_iut{
+            background-image: url("image/logo/iutBlanc.png");
+        }&_sfeir{
+            background-image: url("image/logo/sfeirBlanc.png");
+        }
+    }&_droite{
+        width: 31%;
+        display: flex;
+        justify-content: space-between;
+        height: 75%;
+        &_partie{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }&_partie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_titre{
+            width: 100%;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }&_lien{
+            width: 100%;
+            font-size: 1em;
+            margin-bottom: 0.25rem;
+        }&_developpeur{
+            width: 100%;
+            font-size: 1.1em;
+            margin-bottom: 0.25rem;
+        }
+    }&_developpement{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }&_navigation{
+        width: 55%;
+        margin-left: 5%;
+    }&_gestion{
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .footer{
+        height: 12rem;
+        &_partie{
+            &_titre{
+                font-size: 1.2em;
+            }&_lien{
+                font-size: 0.75em;
+            }&_developpeur{
+                font-size: 0.8em;
+            }
+        }&_developpement{
+            width: 60%;
+        }&_navigation{
+            width: 50%;
+            margin-left: 5%;
+        }&_gestion{
+            width: 40%;
+        }
+    }    
+}
+
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        flex-direction: column;
+        height: 40rem;
+        width: 100%;
+        justify-content: start;
+        &_gauche{
+            width: 100%;
+            height: 25%;
+            margin-top: 2rem;
+            align-items: start;
+            justify-content: space-around;
+        }&_centre{
+            width: 90%;
+            height: 25%;
+        }&_droite{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 30%;
+            &_partie{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }&_partie{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &_titre{
+                width: 100%;
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                text-align: center;
+            }&_lien{
+                width: 100%;
+                font-size: 1em;
+                margin-bottom: 0.25rem;
+                text-align: center;
+            }&_developpeur{
+                width: 100%;
+                font-size: 1.1em;
+                margin-bottom: 0.25rem;
+                text-align: center;
+            }
+        }&_developpement{
+            margin-top: 2rem;
+            width: 50%;
+            
+        }&_navigation{
+            width: 30%;
+            margin-left: 5%;
+        }&_gestion{
+            margin-top: 2rem;
+            width: 30%;
+        }
+    }    
+   
+}

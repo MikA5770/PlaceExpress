@@ -1,0 +1,37 @@
+.abo{
+    border: 2px solid rgb(204, 201, 201);
+    border-radius: 20px;
+    width: 31vw;
+    height: 20vh;
+    margin: 5vh 7vw;
+    padding: 3vh 3vw 0 3vw ;
+}
+
+.abonnement{
+    margin: 0;
+    font-size: 1.5rem;
+    margin-right: 4vh;
+    width: auto;
+    height: auto;
+    margin-bottom: 2vh;
+    text-decoration: underline;
+
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .abonnement{
+        font-size: 1rem;
+        text-decoration: underline;
+        margin-bottom: ;
+    }
+    .submit{
+        margin-top: 4vh;
+    }
+    
+}

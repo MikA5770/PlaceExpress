@@ -1,0 +1,31 @@
+
+@keyframes enlever {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-25rem,0);
+    }
+}
+
+@keyframes arriver {
+    0%{
+        transform: translate(-25rem,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes defiler {
+    0%{
+        transform:translateX(90%);
+    }
+    95%{
+        transform:translateX(-192%);
+    }
+    100%{
+        transform:translateX(-190%);
+    }
+    
+}

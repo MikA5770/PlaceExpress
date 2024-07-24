@@ -1,0 +1,175 @@
+/*-----------------------------------Mesreservation-----------------------------------*/
+
+/*.reservations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
+
+.reservation {
+  border: 1px solid #cc5656;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 100px); 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction:row; 
+  text-align: center; 
+  background-color: #ccc;
+}
+
+.reservation-id,
+.reservation-bat,
+.reservation-etage,
+.reservation-place,
+.reservation-date {
+  width: 100%; 
+  margin-bottom: 5px;
+}
+
+.sup-res{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #ff0022;
+  border-radius: 4px;
+  padding:  5% 15%;
+  margin-top: 5px;
+  display: block;
+}
+
+.modif-res{
+  text-align: center; 
+  color: white;
+  text-decoration: none;
+  background-color: #ffae00;
+  border-radius: 4px;
+  padding: 5%;
+  margin-top: 5px;
+  display: block;
+}
+
+.sup-res:hover {
+  background-color: #ff002259;
+}
+
+.modif-res:hover {
+  background-color: #ffae009f;
+}
+*/
+
+
+/* Ajoutez ces styles dans votre fichier CSS ou dans votre fichier de style TypeScript */
+
+.reservations {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*.numRes_mod_supp {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+
+.reservation-id {
+  font-size: 1.2em;
+  position: relative;
+  left: 1%;
+}
+
+.sup-res,
+.modif-res {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sup-res {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.modif-res {
+  background-color: #3498db;
+  color: #fff;
+}*/
+.numRes_mod_supp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  /* Utilisez space-between pour pousser les éléments à chaque extrémité */
+  align-items: center;  /* Centrer verticalement les éléments */
+}
+
+.reservation-id {
+  font-size: 1.2em;
+  margin-right: auto;  /* Déplace le titre tout à gauche */
+}
+
+.sup-res,
+.modif-res {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sup-res {
+  background-color: #e74c3c;
+  color: #fff;
+  margin-left: 10px;  /* Ajustez la marge à droite pour séparer les liens */
+}
+
+.modif-res {
+  background-color: #3498db;
+  color: #fff;
+  margin-left: 10px;  /* Ajustez la marge à droite pour séparer les liens */
+}
+.Info_res{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Bat_Ad_Etage_Place {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comm_date_heure {
+  width: 40%;
+  display:flex;
+  flex-direction:column;
+}
+
+
+.reservation-bat,
+.reservation-place {
+  margin: 5px 0;
+}
+
+.zeroRes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*horizontalement, verticalement*/
+  
+  text-align: center;
+  font-size: 1.5em;
+  color: #000000;
+  margin: 20px;
+}

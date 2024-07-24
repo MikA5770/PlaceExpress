@@ -1,0 +1,1401 @@
+
+
+.administration{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    &_nav{
+        height: auto;
+        background-color: rgba(255, 255, 255);
+        box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.35);
+        &_btnNav{
+            position: relative;
+            left: 1rem;
+            margin-top: 1rem;
+            z-index: 1;
+        }&_menu{
+            z-index: 0;
+            padding-top: 1rem;
+            
+        }
+    }&_navMobile{
+        display: none;    
+        &_conteneur{
+            display: none;
+        }
+    }&_contenu{
+        padding: 2.5% 2.5% 2.5% 2.5%;
+        width: 90%;
+        color:#333333;
+        &_deuxiemeTitre{
+                width: 100%;
+                font-size: 2em;
+                font-weight: 600;
+                border-bottom: 2.5px solid #333333;
+                padding-bottom: 1%;
+                margin-top: 1%;
+        }
+        &_titre{
+            width: 100%;
+            font-size: 2em;
+            font-weight: 600;
+            border-bottom: 2.5px solid #333333;
+            padding-bottom: 1%;
+            
+        }
+        &_titreBouton{
+            width: 100%;
+            border-bottom: 2.5px solid #333333;
+            padding-bottom: 1%;
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(1){
+                font-size: 2em;
+                font-weight: 600;
+            }&_titre{
+                font-size: 2em;
+                font-weight: 600;
+            }
+            &_titreDeux{
+                font-size: 1em;
+                font-weight: 600;
+            }&_titreImg{
+                display: flex;
+                align-items: center;
+                &_bat,&_plan,&_compte{
+                    height: 2.25rem;
+                    width: 2.25rem;
+                    margin-right: 0.5rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                &_bat{
+                    background-image: url("image/administration/batiment.png");
+                }
+                &_plan{
+                    background-image: url("image/administration/piece.png");
+                }
+                &_compte{
+                    background-image: url("image/compte.png");
+                    border-radius: 50%;
+                }
+            }
+            &_bouton{
+                height: 2rem;
+                width: 20rem;
+                border:1.5px solid #333333;
+                margin-right: 2%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 10px;
+                & button{
+                    background-color: rgba(0, 0, 0, 0);
+                    border:2px solid rgba(0, 0, 0, 0);
+                    height: 100%;
+                    font-size: 0.4em;
+                    text-align: right;
+                }& :nth-child(1){
+                    border-right:1.5px solid #333333;
+                    width: 52.5%;
+                    background-image: url("image/administration/batiment.png");
+                }& :nth-child(2){
+                    width: 42.5%;
+                    background-image: url("image/administration/piece.png");
+                }& :nth-child(n){
+                    background-size: 15%;
+                    background-repeat: no-repeat;
+                    background-position: 5% center;
+
+                }
+            }&_boutonDeux{
+                height: 2rem;
+                width: 11rem;
+                border:1.5px solid #333333;
+                margin-right: 2%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 10px;
+                & button{
+                    background-color: rgba(0, 0, 0, 0);
+                    border:2px solid rgba(0, 0, 0, 0);
+                    height: 100%;
+                    font-size: 0.4em;
+                    text-align: right;
+                }& :nth-child(1){
+                    background-size: 25%;
+                    border-right:1.5px solid #333333;
+                    width: 42.5%;
+                    background-image: url("image/administration/retour.png");
+                }& :nth-child(2){
+                    background-size: 20%;
+                    width: 57.5%;
+                    background-image: url("image/administration/enregistrer.png");
+                }& :nth-child(n){
+                    
+                    background-repeat: no-repeat;
+                    background-position: 5% center;
+
+                }
+            }&_boutonQuatre{
+                width: 32rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                &_btn{
+                    background-color: rgba(0, 0, 0, 0);
+                    border:2px solid rgba(0, 0, 0, 0);
+                    height: 100%;
+                    font-size: 0.4em;
+                    text-align: right;
+                }&_select{
+                    width: 14rem;
+                }&_btn{
+                    background-size: cover;
+                    height: 2rem;
+                    width: 2rem;
+                    background-image: url("image/administration/fleche-vers-le-bas.png");
+                    background-repeat: no-repeat;
+                    background-position: 5% center;
+                }
+            }&_boutonCinq{
+                width: 24rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                &_btn{
+                    background-color: rgba(0, 0, 0, 0);
+                    border:2px solid rgba(0, 0, 0, 0);
+                    height: 100%;
+                    font-size: 0.4em;
+                    text-align: right;
+                }&_select{
+                    width: 20rem;
+                }&_btn{
+                    background-size: cover;
+                    height: 2rem;
+                    width: 2rem;
+                    background-image: url("image/administration/fleche-vers-le-bas.png");
+                    background-repeat: no-repeat;
+                    background-position: 5% center;
+                }
+            }&_boutonDeuxPlan{
+                height: 2rem;
+                width: 15rem;
+                border:1.5px solid #333333;
+                margin-right: 2%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 10px;
+                & button{
+                    background-color: rgba(0, 0, 0, 0);
+                    border:2px solid rgba(0, 0, 0, 0);
+                    height: 100%;
+                    font-size: 0.8em;
+                    text-align: right;
+                }& :nth-child(1){
+                    background-size: 15%;
+                    border-right:1.5px solid #333333;
+                    width: 60%;
+                    background-image: url("image/administration/ajouter.png");
+                }& :nth-child(2){
+                    background-size: 20%;
+                    width: 40%;
+                    background-image: url("image/administration/supprimer.png");
+                }& :nth-child(n){
+                    
+                    background-repeat: no-repeat;
+                    background-position: 5% center;
+
+                }
+            }&_boutonSoloPlan{
+                height: 2rem;
+                width: 8rem;
+                border:1.5px solid #333333;
+                margin-right: 2%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 10px;
+                & button{
+                    background-color: rgba(0, 0, 0, 0);
+                    border:2px solid rgba(0, 0, 0, 0);
+                    height: 100%;
+                    text-align: right;
+                }& :nth-child(1){
+                    font-size: 0.4em;
+                    background-size: 15%;
+                    width: 100%;
+                    background-image: url("image/administration/plus.png");
+                    background-repeat: no-repeat;
+                    background-position: 5% center;
+                }
+            }
+        }&_lesBatiments{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: space-around;
+            align-items: end;
+            &_unBatiment{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                width: 18rem;
+                &_titre{
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 1.5em;
+                    text-decoration: underline;
+                }
+                &_toit{
+                    background-image: url("image/administration/toit.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 18rem;
+                    height: 4.5rem;
+                }&_etage{
+                    width: 12.5rem;
+                    border-left:11px solid black;
+                    border-right: 11px solid black;
+                    border-bottom: 2px solid black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+                    height: 2rem;
+                    &_titre{
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        height: 100%;
+                        font-size: 0.9em;
+                    }
+                    & div:hover + &_bouton{
+                        display: flex;
+                    }
+                    &_bouton{
+                        display: none;
+                    }
+                    &_bouton:hover{
+                        display: flex;
+                    }
+                    &_bouton :nth-child(1){
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-image: url("image/administration/modifier.png");
+                        background-color: rgba(0, 0, 0, 0);
+                        border: 2px solid rgba(0, 0, 0, 0);
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
+                    &_bouton :nth-child(2){
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-image: url("image/administration/supprimer.png");
+                        background-color: rgba(0, 0, 0, 0);
+                        border: 2px solid rgba(0, 0, 0, 0);
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
+                }&_sol{
+                    background-color: white;
+                    border:1px solid #A99063;
+                    width: 16rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 5px;
+                    height: 1.5rem;
+                    &_adresse{
+                        font-size: 0.7em;
+                        height: 100%;
+                        width: 74%;
+                        padding-left: 10%;
+                        display: flex;
+                        align-items: center;
+                        background-image: url("image/administration/adresse.png");
+                        background-position: 0.3rem;
+                        background-repeat: no-repeat;
+                        background-size: 8%;
+                    }
+                    &_bouton{
+                        & :nth-child(1){
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url("image/administration/modifier.png");
+                            background-color: rgba(0, 0, 0, 0);
+                            border: 2px solid rgba(0, 0, 0, 0);
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+                        & :nth-child(2){
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-image: url("image/administration/supprimer.png");
+                            background-color: rgba(0, 0, 0, 0);
+                            border: 2px solid rgba(0, 0, 0, 0);
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+                        
+                    }
+                }
+            }
+        }&_lesInfos{
+            margin-top: 1rem;
+            &_uneInfo{
+                margin-right: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 50%;
+                font-size: 1.3em;
+                & input{
+                    width: 60% !important;
+                }&_date{
+                    width: 60% !important;
+                }&_select{
+                    width: 60% !important;
+                }&_number{
+                    width: 60% !important;
+                }&_upload{
+                    width: 60% !important;
+                }&_space{
+                    width: 60% !important;
+                }
+            }&_upload{
+                margin-right: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                font-size: 1.3em;
+                
+                &_upload{
+                    width: 79.5% !important;
+                    display: flex;
+                    align-items: center;
+                    & :nth-child(1){
+                        margin-right: 2%;
+                    }
+                }
+            }&_uneErreur{
+                width: 50%;
+                display: flex;
+            
+                &_alert{
+                    width: 60%;
+                }
+            }&_contenant{
+                display: flex;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        &_section{
+            margin-top: 0.5%;
+            display: flex;
+            justify-content: space-between;
+            &_gauche{
+                height: 69vh;
+                width: 63%;
+
+                &_grand{
+                    width: 94.9%;
+                    height: 68%;
+                    margin-bottom:2%;
+                    background-color: #F6F6F5;
+                    border-radius: 20px;
+                    box-shadow: 0 0px 10px 2px rgba(0, 0, 0,0.35);
+                    display: flex;
+                    padding: 2.5% 2.5% 2.5% 2.5%;
+                    overflow-y:scroll;
+                    &_calendrier{
+                        height: 10rem;
+                        width: 100%;
+                        border-radius: 20px;
+                        & .ant-picker-calendar-date-content{
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline;
+                        }
+                    }
+                }
+                &_sousEnsemble{
+                    width: 99.9%;
+                    height: 23%;
+                    display: flex;
+                    justify-content: space-between;
+                    &_petit{
+                        height: 100%;
+                        width: 23%;
+                        background-color: #F6F6F5;
+                        border-radius: 20px;
+                        box-shadow: 0 0px 10px 2px rgba(0, 0, 0,0.35);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &_moyen{
+                        height: 100%;
+                        width: 46%;
+                        background-color: #F6F6F5;
+                        border-radius: 20px;
+                        box-shadow: 0 0px 10px 2px rgba(0, 0, 0,0.35);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            &_droite{
+                height: 70vh;
+                width: 35%;
+                background-color: $colorVert;
+                color: white;
+                border-radius: 20px;
+                box-shadow: 0 0px 10px 2px rgba(0, 0, 0,0.35);
+                overflow-y: scroll;
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent; /* Couleur de fond du bouton de défilement */
+                }
+                &_titre{
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                    padding: 5% 5% 2.5% 5%;
+                    width: 90%;
+                    font-size: 1.5em;
+                }
+                &_stat{
+                    display: flex;
+                    height: 15%;
+                    justify-content: space-around;
+                    align-items: center;
+                    & div{
+                        color: white !important;
+                    }
+                }
+                &_graph{
+                    width: 90%;
+                    margin: 2% 5% 4% 5%;
+                }&_tab{
+                    width: 90%;
+                    margin: 2% 5% 4% 5%;
+                    &_titre{
+                        border-bottom: 2px solid white;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 1rem;
+                        & :nth-child(1){
+                            font-size: 1.25em;
+                        }
+                        & :nth-child(2){
+                            font-size: 1em;
+                        }
+                    }&_contenu{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }&_autour{
+            overflow-x: scroll;
+        }&_img{
+            
+            margin-top: 1%;
+            & img{
+                width: 80%;
+            }
+        }
+        &_plan{
+            margin-top: 1%;
+            height: 36rem;
+            width: 68rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            & img{
+                max-width:60rem;
+                z-index: 0;
+            }&_place{
+                z-index: 2;
+                background-color: $colorVert;
+                border:2px solid black;
+                position:absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 0.8em;
+                text-align: center;
+            }
+        }&_permission{
+            margin-top: 1rem;
+            &_admin{
+                width: 100%;
+                border-radius: 10px;
+                background-color: #ffffff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                &_lesAdmin{
+                    width: 90%;
+                    margin-top: 1rem;
+                    &_unAdmin{
+                        height: 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 0.25rem;
+                        &_photo{
+                            height: 1rem;
+                            width: 1rem;
+                            background-image: url("image/administration/profil.png");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            border-radius: 50%;
+                        }&_contenu{
+                            width: 90%;
+                            font-size: 0.8em;
+                            & span{
+                                margin-right: 1rem;
+                            }
+                        }&_supprimer{
+                            height: 1rem;
+                            width: 1rem;
+                            background-image: url("image/administration/croix.png");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-color: rgba(0, 0, 0, 0);
+                            border:none;
+                        }
+                    }
+                }
+
+            }&_compte{
+                width: 100%;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &_lesResultats{
+                    margin: 1rem 0 1rem 0;
+                    width: 93%;
+                    &_unResultat{
+                        height: 1.5rem;
+                        margin-bottom: 0.5rem;
+                        display:flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-size: 0.9em;
+                        &_photo{
+                            height: 1.5rem;
+                            width: 1.5rem;
+                            background-image: url("image/administration/profil.png");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            border-radius: 50%;
+                        }&_contenu{
+                            width: 80%;
+                            & span{
+                                margin-right: 1rem;
+                            }
+                        }&_ajouter{
+                            height: 1.75rem;
+                            width: 10%;
+                            background-color: $colorVert;
+                            color: white;
+                            border-radius: 10px;
+                            box-shadow:  0 0 10px rgba(0, 0, 0, 0.45);
+                            border:none;
+                        }&_admin{
+                            height: 1.75rem;
+                            width: 10%;
+                            background-color: lightslategray;
+                            color: white;
+                            border-radius: 10px;
+                            border:none;
+                        }
+                    
+                    }
+                }
+            }
+            &_titre{
+                height: 16%;
+                width: 96%;
+                margin-top: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid black;
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+            }&_titreDouble{
+                height: 16%;
+                width: 96%;
+                margin-top: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid black;
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &_recherche{
+                    width: 30% !important;
+                }
+            }
+
+        }&_lesRoles{
+            margin-top: 1rem;
+            margin-bottom: 1rem ;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-height: 25rem;
+
+            &_unRole{
+                background-color: white;
+                box-shadow:  0 0 10px rgba(0, 0, 0, 0.45);
+                min-width: 18%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1rem;
+                &:hover .bouton-hover {
+                    display: inline-block;  
+                }
+                &:hover .bouton-supprimer {
+                    display: inline-block;  
+                }
+                & .bouton-hover{
+                    display: none;
+                    transform:translateX(4.25rem);
+                    margin-top: 0.5rem;
+                    position: absolute;
+                    height: 1rem;
+                    width: 1rem;
+                    background-image: url("image/administration/bouton-modifier.png");
+                    background-size: cover;
+                    background-color: rgb(250,165,0,0);
+                    border:none;
+                    &:hover{
+                        display: block;
+                    }
+                }
+                & .bouton-supprimer{
+                    display: none;
+                    transform:translateX(5.5rem);
+                    margin-top: 0.5rem;
+                    position: absolute;
+                    height: 1rem;
+                    width: 1rem;
+                    background-image: url("image/administration/bouton-supprimer.png");
+                    background-size: cover;
+                    background-color: rgb(250,165,0,0);
+                    border:none;
+                    &:hover{
+                        display: block;
+                    }
+                }
+                & .bouton-checkbox{
+                    transform:translateX(5rem);
+                    margin-top: 0.5rem;
+                    position: absolute;
+                    height: 1rem;
+                    width: 1rem;
+                    background-image: url("image/administration/bouton-supprimer.png");
+                    background-size: cover;
+                    background-color: rgb(250,165,0,0);
+                    border:none;
+                    &:hover{
+                        display: block;
+                    }
+                }
+                &_titre{
+                    
+                    display: flex;
+                    justify-content: center;
+
+                    align-items: center;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    min-width: 80%;
+                    font-size: 1.1rem;
+                    &_couleur{
+                        position: absolute;
+                        transform:translateX(-5rem);
+                        height: 1rem;
+                        width: 1rem;
+                        border-radius: 50%;
+                        
+                    }
+                }&_lesBatiments{
+                    border:1.5px solid orange;
+                    background-color:rgb(250,165,0,0.1) ;
+                    width: 80%;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem 0 0.5rem 0 ;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    font-size: 0.8em;
+                    & div{
+                        border-bottom: 0.5rem;
+                    }
+                }
+            }
+        }&_lesComptes{
+            background-color: white;
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.45);
+            border-radius: 10px;
+            min-height: 12rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_titre{
+                width: 96%;
+                padding: 1rem 0 0.5rem 0;
+                margin-bottom: 0.5rem;
+                border-bottom: 2px solid black;
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_recherche{
+                    border-radius: 8px;
+                    width: 30%;
+                }
+            }&_unCompte{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                &_profil{
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    &_photo{
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        margin-right: 3%;
+                        background-image: url("image/compte.png");
+                        background-size: cover;
+                        border-radius: 10px;
+                    }&_txt{
+                        margin-right: 2.5%;
+                    }
+                }&_droite{
+                    display: flex;
+                    width: 40%;
+                    justify-content: space-between;
+                    align-items: center;
+                }&_lesRoles{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    &_unRole{
+                        min-width: 30%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin-bottom: 0.25rem;
+                        &_couleur{
+                            margin-right: 0.5rem;
+                            height: 1rem;
+                            width: 1rem;
+                            border-radius: 50%;
+                            background-color: orange;
+                        }
+                    }
+                }&_modifier{
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    background-image: url("image/administration/bouton-modifier.png");
+                    background-size: cover;
+                    background-color: rgb(250,165,0,0);
+                    border:none;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    .administration{
+       display: flex;
+       width: 100%;
+       &_contenu{
+            
+        &_titreBouton{
+            &_titreImg{
+                &_bat,&_plan,&_compte{
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+            &_boutonQuatre{
+                width : 45%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                &_select{
+                    width: 100%;
+                    margin-bottom: 0.25rem;
+                }&_lesSelect{
+                    width: 85%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+            }&_boutonCinq{
+                width: 50%;
+                &_select{
+                    width: 80%;
+                }
+            }
+        }&_lesBatiments{
+                
+                &_unBatiment{
+                    &_etage{
+                       
+                        &_bouton{
+                            display: flex;
+                        }
+                    }
+                }
+            }&_lesInfos{
+                margin-top: 1rem;
+                &_uneInfo{
+                    flex-direction: column;
+                    align-items: start;
+                    width: 100%;
+                    font-size: 1.3em;
+                    & input{
+                        width: 100% !important;
+                    }&_date{
+                        width: 100% !important;
+                    }&_select{
+                        width: 100% !important;
+                    }&_number{
+                        width: 100% !important;
+                    }&_upload{
+                        width: 100% !important;
+                    }&_space{
+                        width: 100% !important;
+                    }
+                }&_upload{
+                    flex-direction: column;
+                    align-items: start;
+                    overflow-y: scroll;
+                    &_upload{
+                        margin-top: 0.5rem;
+                    }
+                }&_uneErreur{
+                    width: 100%;
+                    display: flex;
+                
+                    &_alert{
+                        width: 100%;
+                    }
+                }&_contenant{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            &_section{
+                flex-direction: column;
+                width: auto;
+                &_gauche{
+                    width: 100%;
+    
+                    &_sousEnsemble{
+                        &_petit{
+                            text-align: center;
+                        }
+                    }
+                }
+                &_droite{
+                    width: 100%;
+                    background-color: rgb(0,0,0,0);
+                    box-shadow:none;
+                    overflow-y: scroll;
+                    max-height: 100vh;
+                    margin-top: 2.5rem;
+                    &_titre{
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+                        border-bottom: 2px solid rgb(255, 255, 255);
+                        padding: 2.5% 5% 2.5% 5%;
+                        width: 90%;
+                    }
+                    &_stat{
+                        margin-top: 1rem;
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+                    }
+                    &_graph{
+                        width: 100%;
+                        margin: 2% 0% 2% 0%;
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+
+                    }&_tab{
+                        width: 90%;
+                        margin: 0 0% 2% 0%;
+                        padding: 2% 5% 2% 5%;
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+                        
+                    }
+                }
+            }&_img{
+                
+                margin-top: 1%;
+                & img{
+                    width: 80%;
+                }
+            }
+            &_plan{
+                overflow-y: scroll;
+                margin-top: 1%;
+                height: 36rem;
+                width: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                & img{
+                    overflow-y: scroll;
+                    max-width:60rem;
+                    z-index: 0;
+                }&_place{
+                    z-index: 2;
+                    background-color: $colorVert;
+                    border:2px solid black;
+                    position:absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 0.8em;
+                    text-align: center;
+    
+                    
+                }
+            }&_permission{
+                &_compte{
+                    &_lesResultats{
+                        &_unResultat{
+                           &_ajouter{
+                                width: 15%;
+                            }&_admin{
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+                &_titreDouble{
+                    &_recherche{
+                        width: 50% !important;
+                    }
+                }
+    
+            }&_lesRoles{
+                &_unRole{ 
+                    min-width: 32%;
+                    & .bouton-hover{
+                        display: inline-block;
+                        transform:translateX(3.5rem);
+                        
+                    }
+                    & .bouton-supprimer{
+                        display: inline-block;
+                        transform:translateX(4.5rem);
+                    }
+                    & .bouton-checkbox{
+                        transform:translateX(4.5rem);
+                    }
+                }
+            }&_lesComptes{
+                &_titre{
+                    font-size: 1.5em;
+                    &_recherche{
+                        border-radius: 8px;
+                        width: 40%;
+                    }
+                }&_unCompte{
+                    flex-direction: column;
+                    &_profil{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        &_photo{
+                            height: 2rem;
+                            width: 2rem;
+                        }
+                    }&_droite{
+                        display: flex;
+                        width: 100%;
+                    }&_lesRoles{
+                        width: 90%;
+                        &_unRole{
+                            min-width: 20%;
+                        }
+                    }
+                }
+        }   }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .administration{
+        flex-direction: column;
+        &_nav{
+            display: none;
+        }
+        &_navMobile{
+            display: flex;
+            white-space: nowrap;
+            height: 2rem;
+            background-color: white;
+            font-size: 1.26em;
+            overflow-y: visible;
+            &_conteneur{
+                height: 3rem;
+                width: 100%;
+                overflow-x:scroll;
+                overflow-y: visible;
+                display: block;
+                box-shadow: 0 10px 10px 0px rgba(0, 0, 0,0.35);
+            }
+            &_element{
+                padding: 0 1rem 0 1rem;
+            }&_elementSelectionner{        
+                color: $colorVert;
+                display: flex;
+                flex-direction: column;
+                & :nth-child(1){
+                    padding: 0 1rem 0 1rem;
+                }
+                & :nth-child(2){
+                    height: 0.6rem;
+                    width: 100%;
+                    background-color: $colorVert;
+                    border-radius: 10px;
+                }
+            }
+
+        }&_contenu{
+            padding: 2.5% 2.5% 2.5% 2.5%;
+            width: 95%;
+            &_titreBouton{
+                &_titreImg{
+                    &_bat,&_plan,&_compte{
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+                &_boutonQuatre{
+                    width : 45%;
+                    display: flex;
+                    
+                    align-items: center;
+                    justify-content: space-around;
+                    &_select{
+                        width: 100%;
+                        margin-bottom: 0.25rem;
+                    }&_lesSelect{
+                        width: 85%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                }&_boutonCinq{
+                    width: 50%;
+                    &_select{
+                        width: 80%;
+                    }
+                }
+            }&_lesBatiments{
+                &_unBatiment{
+                    margin-bottom: 1rem;
+                    width: 80%;
+                    &_titre{
+                        font-size: 1.75em;
+                    }
+                    &_toit{
+                        background-image: url("image/administration/toit.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 20rem;
+                        height: 5rem;
+                        
+                    }&_etage{
+                        width: 13.8rem;
+                        height: 2.5rem;
+                        &_titre{
+                            font-size: 1.2em;
+                        }
+                        &_bouton{
+                            display: flex;
+                        }
+                    }&_sol{
+                        width: 18rem;
+                        height: 2rem;
+                        &_adresse{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }&_lesInfos{
+                margin-top: 1rem;
+                &_uneInfo{
+                    flex-direction: column;
+                    align-items: start;
+                    width: 100%;
+                    font-size: 1.3em;
+                    & input{
+                        width: 100% !important;
+                    }&_date{
+                        width: 100% !important;
+                    }&_select{
+                        width: 100% !important;
+                    }&_number{
+                        width: 100% !important;
+                    }&_upload{
+                        width: 100% !important;
+                    }&_space{
+                        width: 100% !important;
+                    }
+                }&_upload{
+                    flex-direction: column;
+                    align-items: start;
+                    overflow-y: scroll;
+                    &_upload{
+                        margin-top: 0.5rem;
+                    }
+                }&_uneErreur{
+                    width: 100%;
+                    display: flex;
+                
+                    &_alert{
+                        width: 60%;
+                    }
+                }&_contenant{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            &_section{
+                margin-top: 1%;
+                display: flex;
+                flex-direction: column;
+                &_gauche{
+                    height: 73vh;
+                    width: 100%;
+                    &_sousEnsemble{
+                        &_petit{
+                            text-align: center;
+                        }
+                        
+                    }
+                }
+                &_droite{
+                    width: 100%;
+                    background-color: rgb(0,0,0,0);
+                    box-shadow:none;
+                    overflow-y: scroll;
+                    max-height: 59vh;
+                    margin-top: 1rem;
+                    &_titre{
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+                        border-bottom: 2px solid rgb(255, 255, 255);
+                        padding: 2.5% 5% 2.5% 5%;
+                        width: 90%;
+                    }
+                    &_stat{
+                        margin-top: 1rem;
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+                    }
+                    &_graph{
+                        width: 100%;
+                        margin: 2% 0% 2% 0%;
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+
+                    }&_tab{
+                        width: 90%;
+                        margin: 0 0% 2% 0%;
+                        padding: 2% 5% 2% 5%;
+                        background-color: $colorVert;
+                        border-radius: 20px;
+                        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+                        
+                    }
+                }
+            }&_autour{
+                overflow-x: scroll;
+            }
+            &_plan{
+                margin-top: 1%;
+                height: 36rem;
+                width: 68rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                & img{
+                    max-width:60rem;
+                    z-index: 0;
+                }&_place{
+                    z-index: 2;
+                    background-color: $colorVert;
+                    border:2px solid black;
+                    position:absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 0.8em;
+                    text-align: center;
+    
+                    
+                }
+            }&_permission{
+                &_admin{
+                    &_lesAdmin{
+                        &_unAdmin{
+                            height: 2rem;
+                            margin-bottom: 0.25rem;
+                            &_photo{
+                                height: 2rem;
+                                width: 2rem;
+                                margin-right: 0.5rem;
+                            }&_contenu{
+                                font-size: 1em;
+                            }&_supprimer{
+                                height: 1.25rem;
+                                width: 1.25rem;
+                            }
+                        }
+                    }
+    
+                }&_compte{
+                    &_lesResultats{
+                        &_unResultat{
+                            height: 2rem;
+                            margin-bottom: 0.5rem;
+                            font-size: 1em;
+                            &_photo{
+                                height: 2rem;
+                                width: 2rem;
+                                margin-right: 0.5rem;
+                            }&_contenu{
+                                width: 80%;
+                                & span{
+                                    margin-right: 0.5rem;
+                                }
+                                overflow-y: scroll;
+                            }&_ajouter{
+                                width: 20%;
+                                
+                            }&_admin{
+                                width: 20%;   
+                            }
+                        }
+                    }
+                }
+                &_titreDouble{
+                    font-size: 1.25em;
+                    &_recherche{
+                        width: 50% !important;
+                    }
+                }
+            }&_lesRoles{
+                &_unRole{
+                    min-width: 45%;
+                    margin-bottom: 1rem;
+                    & .bouton-hover{
+                        display: inline-block;
+                        transform:translateX(4.25rem);
+                    }
+                    & .bouton-supprimer{
+                        display: inline-block;
+                        transform:translateX(6rem);
+                    }
+                    & .bouton-checkbox{
+                        transform:translateX(6rem);
+                    }
+                    &_titre{
+                        &_couleur{
+                            transform:translateX(-5.5rem);
+                        }
+                    }&_lesBatiments{
+                        font-size:0.9em;
+                    }
+                }
+            }&_lesComptes{
+                &_titre{
+                    font-size: 1.25em;
+                    &_recherche{
+                        border-radius: 8px;
+                        width: 40%;
+                    }
+                }&_unCompte{
+                    flex-direction: column;
+                    &_profil{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        &_photo{
+                            height: 2rem;
+                            width: 2rem;
+                        }
+                    }&_droite{
+                        display: flex;
+                        width: 100%;
+                    }&_lesRoles{
+                        width: 90%;
+                        &_unRole{
+                            min-width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

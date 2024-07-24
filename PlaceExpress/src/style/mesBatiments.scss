@@ -1,0 +1,130 @@
+.mesBatiments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    min-height: 80vh;
+    &_unBatiment{
+        height: 11rem;
+        margin-top: 1.5rem;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0px 10px 2px rgba(0, 0, 0,0.35);
+        width: 90%;
+        &_haut{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            & img{
+                margin-left: 2%;
+                margin-right: 3%;
+                height: 7rem;
+            }
+            &_contenu{
+                height: 80%;
+                &_titre{
+                    font-weight: bold;
+                    font-size: 1.4em;
+                    margin-bottom: 1%;
+                }
+                padding-right: 5%;
+            }
+        }
+        &_bas{
+            background-color: $colorVert;
+            height: 20%;
+            width: 100%;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size:1em;
+            &_actif{
+                padding-left: 2rem;
+                margin-right: 1rem;
+                background-image: url("image/mesBatiments/actif.png");
+                background-size: 1.25rem;
+                background-repeat: no-repeat;
+                background-position: left center;
+            }&_adresse{
+                padding-left: 2rem;
+                margin-left: 1rem;
+                background-image: url("image/mesBatiments/adresse.png");
+                background-size: 1.25rem;
+                background-repeat: no-repeat;
+                background-position: left center;
+
+            }
+            &_actif,&_adresse{
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    .mesBatiments{   
+        &_unBatiment{
+            height: 7.5rem;
+            &_haut{
+                & img{
+                    height: 5rem;
+                }
+                &_contenu{
+                    height: 80%;
+                    &_titre{
+                        font-size: 1em;
+                    }&_description{
+                        font-size: 0.8em;
+                    }
+                }
+            }
+            &_bas{
+                font-size:0.8em;
+                &_actif{
+                    padding-left: 1.5rem;
+                    margin-right: 0.75rem;
+                    background-size: 1rem;
+                }&_adresse{
+                    padding-left: 1.5rem;
+                    margin-left: 0.75rem;
+                    background-size: 1rem;
+    
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    .mesBatiments{   
+        &_unBatiment{
+            &_haut{
+                &_contenu{
+                    overflow-y: scroll;
+                    
+                }
+            }
+            &_bas{
+                font-size:0.8em;
+                &_actif{
+                    padding-left: 1.5rem;
+                    margin-right: 0.75rem;
+                }&_adresse{
+                    padding-left: 1.5rem;
+                    margin-left: 0.75rem; 
+                }
+            }
+        }
+    }
+}

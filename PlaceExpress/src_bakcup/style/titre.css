@@ -1,0 +1,28 @@
+.indication, .titre_plan{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.div_titre{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.titre_plan{
+    margin-left: 10vw;
+
+}
+
+.indication{
+    width: 100%;
+    text-align: center;
+    margin: 5vh 0;
+}
+
+@media screen and (max-width: 768px) {
+    .indication, .titre_plan{
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    
+}

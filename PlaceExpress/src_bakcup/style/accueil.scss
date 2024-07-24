@@ -1,0 +1,355 @@
+
+.accueil{
+    color: $colorTexte;
+    &_presentation{
+        height: 100vh;
+        width: 100%;
+        background-image: url("image/accueil/fond.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_header{
+            position: absolute;
+            top:0;
+            width: 99.7%;
+            height: 12.9vw;
+            min-height: 6rem;
+            max-height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &_logo{
+                width: 16vw;
+                max-width: 12rem;
+                max-height: 7rem;
+                height: 10vw;
+                background-image: url("image/logo_blanc_mobile.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }& :nth-child(1){
+                padding-left: 4vw;
+                height: 100%;
+                width: 25%;
+                display: flex;
+                align-items: center;
+               
+            }& :nth-child(3){
+                justify-content: end;
+                padding-right: 4vw;
+                height: 100%;
+                width: 25%;
+                display: flex;
+                align-items: center;
+
+            }& a, & a:visited{
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                text-decoration: none;
+                font-style: oblique;
+                font-size: 1.75em;
+                
+            }
+        }&_slogan{
+            color:white;
+            font-size: 4.5em;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+    }&_bienvenu{
+        height: 85vh;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+        background-image: url("image/accueil/fondTexte.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &_img{
+            border:4px solid $colorTexte;
+            height: 55%;
+            width: 40%;
+            background-image: url("image/accueil/fond.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &_txt{
+            height: 30%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }&_txt{
+        &_titre{
+            font-size: 2em;
+            font-weight: 900;
+            font-family: 'Poppins', sans-serif;
+            color: $colorDore;
+        }&_sousTitre{
+            font-weight: 900;
+            font-size: 1.25em;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 2%;
+        }&_paragraphe{
+            color: $colorTexte;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+        }
+    }&_divPhoto{
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-bottom: 2%;
+        &_grande{
+            border:4px solid $colorTexte;
+            height: 80%;
+            width: 75%;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            margin-bottom: 5%;
+        }&_petite{
+            position: absolute;
+            border:4px solid $colorTexte;
+            height: 45%;
+            width: 45%;
+            left: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+    }&_divAccueilText{
+        background-color: white;
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_div{
+            height: 80%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & :nth-child(n){
+                text-align: center;
+            }
+            & :nth-child(2){
+                margin-bottom: 4%;
+            }&_img{
+                height: 2.5rem;
+                width: 2.5rem;
+                margin-bottom: 2%;
+                background-image: url("image/accueil/check.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+    .accueil{
+        &_presentation{
+            &_header{
+                &_partieUn{
+                    &::before {
+                        content: "";
+                        width: 6.5rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }&_partieDeux{
+                    &::before {
+                        content: "";
+                        width: 11rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                        margin-left: 1.5vw;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }&_partieTrois{
+                    &::before {
+                        content: "";
+                        width: 13rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                        margin-left: 1.5vw;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }
+        }}}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .accueil{
+        &_presentation{
+            &_header{
+                & a, & a:visited{
+                    font-size: 1.5em;
+                }
+                &_partieUn{
+                    &::before {
+                        content: "";
+                        width: 5rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }&_partieDeux{
+                    &::before {
+                        content: "";
+                        width: 9rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                        margin-left: 4vw;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }&_partieTrois{
+                    &::before {
+                        content: "";
+                        width: 11rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                        margin-left: 4vw;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }
+            }&_slogan{
+                font-size: 3em;
+            }
+        }
+    &_txt{
+        &_titre{
+            font-size: 1.45em;
+            color: $colorDore;
+        }&_sousTitre{
+            font-size: 0.9em;
+        }&_paragraphe{
+            font-size: 0.7em;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 767px) {
+
+    .accueil{
+        &_presentation{
+            background-image: url("image/accueil/fondMobile.jpg");
+            &_header{
+                min-height: 8rem;
+                & a, & a:visited{
+                    font-size: 1em;
+                }&_logo{
+                    width: 24vw;
+                    height: 15vw;
+                }
+            }&_slogan{
+                font-size: 2.5em;
+            }
+        }&_bienvenu{
+            
+            flex-direction: column;
+            align-items: center;
+            &_img{
+                border:4px solid $colorTexte;
+                height: 50%;
+                width: 100%;
+            }
+            &_txt{
+                height:40%;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                & :nth-child(n){
+                    text-align: center;
+                }
+            }
+        }
+        &_txt{
+            &_titre{
+                font-size: 5vw;
+            }&_sousTitre{
+                font-size: 3.5vw;
+            }&_paragraphe{
+                font-size: 2.5vw;
+            }
+        }&_divPhoto{
+            height: 50vh;
+            &_petite{
+                height: 25%;
+            }
+        }&_divAccueilText{
+            &_div{
+                height: 80%;
+                width: 90%;
+            &_img{
+                height: 1.75rem;
+                width: 1.75rem;
+                margin-bottom: 2%;
+                background-image: url("image/accueil/check.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            }
+        }
+    }
+
+
+}

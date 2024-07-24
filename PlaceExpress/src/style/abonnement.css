@@ -1,0 +1,22 @@
+.abo{
+    border: 2px solid rgb(204, 201, 201);
+    border-radius: 20px;
+    width: 31vw;
+    height: 20vh;
+    margin: 5vh 7vw;
+    padding: 3vh 3vw 0 3vw ;
+}
+
+.abonnement{
+    font-size: 1.5rem;
+    margin-right: 4vh;
+    width: auto;
+    height: auto;
+}
+
+.submit{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}

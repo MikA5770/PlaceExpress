@@ -1,0 +1,32 @@
+.vert{
+    color: $colorVert;
+    &:visited{
+        color: $colorVert;
+    }
+    &::before{ 
+        visibility: hidden;
+    }
+}
+
+.blanc{
+    color:white;
+    & a:visited{
+        color:white;
+    }
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.img{
+    &_navigation{
+        background-image: url("image/navigation.png");
+    }
+    &_compte{
+        background-image: url("image/compte.png");
+    }
+    &_compteActuel{
+        background-image: url("image/compteActuel.png");
+    }
+}

@@ -1,0 +1,49 @@
+/*----------------------------CONNEXION ----------------------- */
+
+  /* Style pour les champs de formulaire et le bouton */
+  input[type='text'],
+  input[type='password'] {
+    padding: 10px; /* Espacement à l'intérieur des champs de formulaire */
+    margin-bottom: 10px; /* Espacement entre les champs de formulaire */
+  
+  }
+  
+
+  
+   /********************************BOUTON GOOGLE*************************************/
+  
+   /* Style de base */
+  .google-login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4285f4; /* Couleur principale de Google */
+    transition: background-color 0.3s ease;
+    margin-top: 2%;
+    width: 40vh;
+  }
+  
+  /* Effet au survol */
+  .google-login-btn:hover {
+    background-color: #3367d6; /* Couleur au survol */
+  }
+  
+  /* Effet au clic */
+  .google-login-btn:active {
+    background-color: #2a56c6; /* Couleur au clic */
+  }
+  
+  /* Icône Google */
+  .google-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: #fff;
+  }

@@ -1,0 +1,590 @@
+.contact{
+    color: $colorTexte;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    &_presentation{
+        height: 100vh;
+        width: 100%;
+        background-image: url("image/accueil/fond.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        &_header{
+            position: absolute;
+            top:0;
+            width: 99.7%;
+            height: 12.9vw;
+            min-height: 6rem;
+            max-height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &_logo{
+                width: 16vw;
+                max-width: 12rem;
+                max-height: 7rem;
+                height: 10vw;
+                background-image: url("image/logo_blanc_mobile.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }&_partieUn{
+                padding-left: 4vw;
+                height: 100%;
+                width: 25%;
+                display: flex;
+                align-items: center;
+               
+            }& :nth-child(3){
+                justify-content: end;
+                padding-right: 4vw;
+                height: 100%;
+                width: 25%;
+                display: flex;
+                align-items: center;
+
+            }& a, & a:visited{
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                text-decoration: none;
+                font-style: oblique;
+                font-size: 1.75em;
+                
+            }&_partieNav{
+                width: 25%;
+                height: 5rem;
+                background-image: url("image/accueil/navigation.png");
+                background-repeat: no-repeat;
+                background-position: 15%;
+                background-size: 25%;
+            }
+        }&_slogan{
+            color:white;
+            font-size: 4.5em;
+            font-style: italic;
+            font-family: 'Poppins', sans-serif;
+            padding: 0 0 5% 5%;
+        }& a{
+            color: white;
+            &:visited{
+                color: white;
+            }
+        }&_navigation{
+            position: absolute;
+            background-color: rgb(255,255,255,0.4);
+            box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+            left: 0;
+            height: 100vh;
+            width: 24vw;
+            border-right: 3px solid white;
+            padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transform-origin: left;
+            transform: translate(-25rem,0);
+            z-index: 40;
+            &_bouton{
+                background-image: url("image/accueil/fermer.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                border:2px solid rgb(0,0,0,0);
+                background-color:rgb(0,0,0,0) ;
+                height:6rem;
+                width: 6rem;
+                margin-top: 2.5rem;
+            }&_navigation{
+                font-family: 'Poppins', sans-serif;
+                height: 70%;
+                font-size: 2em;
+                color : black;
+                display: flex;
+                flex-direction: column;
+                &_endroit{
+                    margin-top: 1rem;
+                    text-decoration: none;
+                    &:visited{
+                        color:white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }&_defillement{
+        width: 90%;
+        height: 17vh;
+        margin: 4rem 0 2rem 0;
+        border-top:1.5px solid rgb(0, 0, 0);
+        border-bottom:1.5px solid rgb(0, 0, 0);
+        color: $colorDore;
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        &_animation{
+            height: 50%;
+            width: 100rem;
+            font-size: 3.5em;
+            white-space: nowrap;
+            animation: defiler 15s linear infinite;
+        }
+    }&_collaborateur{
+        width: 80%;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_titre{
+            border-bottom: 3px solid $colorDore;
+            width: 30%;
+            font-size: 2em;
+            color:$colorDore;
+            text-align: center;
+            margin-bottom: 2rem;
+        }&_lesCollaborateurs{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+            }
+            
+            &_unCollaborateur{
+               
+                border-radius: 10px ;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+                width: 25%;
+                &_image{
+                    border-top-right-radius: 10px ;
+                    border-top-left-radius: 10px ;
+                    background-color: rgb(239, 238, 238);
+                    height: 10rem;
+                    width: 100%;
+                }&_contenu{
+                    height: 4rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 10%;
+                    &_titre{
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        color:$colorTexte;
+                        text-decoration:none;
+                        
+                    }&_site{
+                        color:gray;
+                        
+                    }
+                }
+            }
+        }
+    }&_lesImages{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        & a{
+            text-decoration: none;
+        }
+        &_uneImage{
+            height: 16rem;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_image{
+                border:2px solid black;
+                background-color: rgb(240, 240, 240);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 80%;
+                width: 100%;
+            }&_info{
+                margin-top: 0.5rem;
+                font-size: 1.2em;
+                font-weight: bold;
+                color: $colorDore;
+                
+            }
+        }
+       
+    }&_tuteur{
+        margin-bottom: 2em;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_titre{
+            border-bottom: 3px solid $colorDore;
+            width: 30%;
+            font-size: 2em;
+            color:$colorDore;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        a{
+            text-decoration: none;
+        }
+        &_card{
+            border-radius: 10px ;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            width: 25%;
+            &_photo{
+                border-top-right-radius: 10px ;
+                border-top-left-radius: 10px ;
+                background-color: rgb(239, 238, 238);
+                height: 14rem;
+                width: 100%;
+            }&_contenu{
+                height: 5rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10%;
+                &_titre{
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    color:$colorTexte;
+                    text-decoration:none;
+                    
+                }&_site{
+                    color:gray;
+                    
+                }
+            }
+        }
+    }&_titre{
+        border-bottom: 3px solid $colorDore;
+        min-width: 30%;
+        padding: 0 1rem 0 1rem;
+        font-size: 2em;
+        color:$colorDore;
+        text-align: center;
+        margin-bottom: 1rem;
+    }&_poster{
+        height: 39.95rem;
+        width: 27.60rem;
+        border:2px solid black;
+        background-color: rgb(240, 240, 240);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+        margin-bottom: 3rem;
+        background-image: url("image/poster.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+}
+
+
+
+
+
+.sfeir{
+    background-image: url("image/sfeir.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.univLorraine{
+    background-image: url("image/univLorraine.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dptInfo{
+    background-image: url("image/dptInfo.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.rotateUn{
+    transform: rotate(5deg);
+}
+.rotateDeux{
+    transform: translate(-1rem,-1rem) rotate(-6deg);
+}
+.rotateTrois{
+    transform: translate(-1.5rem,-0.5rem) rotate(6deg);
+}
+.rotateQuatre{
+    transform: translate(-2rem,-1rem) rotate(-5deg);
+}
+
+.thibault{
+    background-image: url("image/personne/thibault.png");
+}
+.abdou{
+    background-image: url("image/personne/abdou.jpeg");
+}
+.mikail{
+    background-image: url("image/personne/mikail.jpg");
+}
+.alexis{
+    background-image: url("image/personne/alexis.jpg");
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .contact{
+        &_presentation{
+            &_header{
+                & a, & a:visited{
+                    font-size: 1.5em;
+                }
+                &_partieUn{
+                    &::before {
+                        content: "";
+                        width: 5rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }&_partieDeux{
+                    &::before {
+                        content: "";
+                        width: 9rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                        margin-left: 4vw;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }&_partieTrois{
+                    &::before {
+                        content: "";
+                        width: 11rem;
+                        height: 2vh;
+                        position: absolute;
+                        border-bottom: 3px solid white;
+                        padding: 8px;
+                        display: inline-block;
+                        transform: scaleX(0);
+                        margin-left: 4vw;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transition: transform 0.3s ;
+                    }
+                }
+            }&_slogan{
+                font-size: 3em;
+            }&_navigation{
+                width: 30vw;
+                &_bouton{
+                    height:5rem;
+                    width: 5rem;
+                    margin-top: 1rem;
+                }&_navigation{
+                    font-size: 1.5em;
+                }
+            }
+        }&_defillement{
+            margin: 2rem 0 1rem 0;
+            &_animation{
+                font-size: 2.5em;
+            }
+        }&_collaborateur{
+            width: 90%;
+            margin-bottom: 2rem;
+            &_titre{
+                width: 40%;
+                font-size: 2em;
+            }&_lesCollaborateurs{
+                &_unCollaborateur{
+                    width: 30%;
+                    &_image{
+                        height: 12rem;
+                    }&_contenu{
+                        height: 5rem;
+                        margin-left: 8%;
+                        &_titre{
+                            font-size: 1.1em;
+                        }&_site{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }&_lesImages{
+            margin-bottom: 1rem;
+            &_uneImage{
+                height: 12rem;
+                &_info{
+                    font-size: 1em;
+                    text-align: center;
+                }
+            }
+           
+        }&_tuteur{
+            margin-bottom: 1em;
+            width: 90%;
+            &_titre{
+                width: 40%;
+            }
+            
+            &_card{
+                width: 30%;
+                &_contenu{
+                    height: 5rem;
+                    &_titre{
+                        font-size: 1.1em;
+                        
+                    }&_site{
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .contact{
+        &_presentation{
+            background-image: url("image/accueil/fondMobile.jpg");
+            &_header{
+                min-height: 8rem;
+                & a, & a:visited{
+                    font-size: 1em;
+                }&_logo{
+                    width: 24vw;
+                    height: 15vw;
+                }&_partieNav{
+                    background-position: 30%;
+                    background-size: 40%;
+                }
+            }&_slogan{
+                font-size: 2.5em;
+            }&_navigation{
+                width: 40vw;
+                &_bouton{
+                    height:5rem;
+                    width: 5rem;
+                    margin-top: 1rem;
+                }&_navigation{
+                    font-size: 1.5em;
+                }
+            }
+        }&_defillement{
+            margin: 2rem 0 1rem 0;
+            &_animation{
+                font-size: 3.5em;
+            }
+        }&_collaborateur{
+            width: 90%;
+            margin-bottom: 2rem;
+            &_titre{
+                width: 50%;
+                font-size: 2em;
+            }&_lesCollaborateurs{
+                &_unCollaborateur{
+                    width: 30%;
+                    &_image{
+                        height: 12rem;
+                    }&_contenu{
+                        height: 5rem;
+                        margin-left: 8%;
+                        &_titre{
+                            font-size: 1.1em;
+                        }&_site{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }&_lesImages{
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+            &_uneImage{
+                height: 20rem;
+                width: 45%;
+                border-radius: 10px ;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+                margin-bottom: 2rem;
+                &_image{
+                    border:none;
+                    height: 80%;
+                    width: 100%;
+                }&_info{
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    text-align: center;
+                    
+                }
+            }
+           
+        }&_tuteur{
+            margin-bottom: 1em;
+            width: 90%;
+            &_titre{
+                width: 50%;
+            }
+            
+            &_card{
+                width: 45%;
+                &_photo{
+                    height: 16rem;
+                }
+                &_contenu{
+                    height: 5rem;
+                    &_titre{
+                        font-size: 1.1em;
+                        
+                    }&_site{
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+
+    .rotateUn{
+        transform: rotate(0);
+    }
+    .rotateDeux{
+        transform: translate(0,0) rotate(0);
+    }
+    .rotateTrois{
+        transform: translate(0,0) rotate(0);
+    }
+    .rotateQuatre{
+        transform: translate(0,0) rotate(0);
+    }
+    
+}
